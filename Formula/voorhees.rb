@@ -5,20 +5,20 @@
 class Voorhees < Formula
   desc "Melvin's projects."
   homepage "https://melvin.la"
-  version "0.9.0"
+  version "1.0.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/Nivl/voorhees/releases/download/v0.9.0/voorhees_0.9.0_Darwin_x86_64.tar.gz"
-    sha256 "24f78e46db4582f142f72dbc9447ad8249ab595d90dc85421cdb7cce31709380"
+    url "https://github.com/Nivl/voorhees/releases/download/v1.0.0/voorhees_1.0.0_Darwin_x86_64.tar.gz"
+    sha256 "1f7306c21c8af0a93529558633c10daeee33a42aa56177404cf470db993dacb4"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/Nivl/voorhees/releases/download/v0.9.0/voorhees_0.9.0_Linux_x86_64.tar.gz"
-    sha256 "9b0654dd957ee9f5a12de49e10877fee0b9eefe87599c0aa9353895c4cb83316"
+    url "https://github.com/Nivl/voorhees/releases/download/v1.0.0/voorhees_1.0.0_Linux_x86_64.tar.gz"
+    sha256 "0047a35ca03ff78259bd62b4d6f6415217df26ffcf332a3c3f4582cff144346d"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/Nivl/voorhees/releases/download/v0.9.0/voorhees_0.9.0_Linux_arm64.tar.gz"
-    sha256 "b902bf93411a6ec79fbfdb7a7fc6ae8804be9d6533e64ed533aea74620df0ddf"
+    url "https://github.com/Nivl/voorhees/releases/download/v1.0.0/voorhees_1.0.0_Linux_arm64.tar.gz"
+    sha256 "38e07362bc941d345b58da8e8b1939e4ff70e181b72e81ac55681d14d89291e3"
   end
 
   def install
